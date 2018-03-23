@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>ça c'est IMAC ?</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png" />
+  </head>
+  <body>
+    <div id="page">
+      <div id="wrapper">
+        <header id="site-title">
+          <h1 class="diagonal">
+            ça c'est <span class="bold" >IMAC</span> ?
+          </h1>
+        </header>
+        <section id="intro">
+          <div class="oblong" id="formulaire">
+            <ul>
+              <li class="bold" id="input-pseudo-li"> 
+                Pseudo : 
+                <input id="input-pseudo" name="pseudo" type="text" value=""/>
+              </li>
+              <li class="bold li-avatar"> Avatar :     
+                <div id="avatar-list">
+                  <img class="picture-avatar avatar-click avatar-active" alt="BDI" src="img/BDI.jpg" />
+                  <img class="picture-avatar avatar-click" alt="dechets" src="img/dechets.jpg" />
+                  <img class="picture-avatar avatar-click" alt="IMAC" src="img/IMAC.jpg" />
+                  <img class="picture-avatar avatar-click" alt="Lisa Lubac"  src="img/Lisa_Lubac.jpg" />
+                  <img class="picture-avatar avatar-click" alt="Luc Chevalier"  src="img/Luc_Chevalier.jpg" />
+                  <img class="picture-avatar avatar-click" alt="Lucas"  src="img/Lucas.jpg" />
+                  <img class="picture-avatar avatar-click" alt="Marie-Lou"  src="img/Marie-Lou.jpg" />
+                  <img class="picture-avatar avatar-click" alt="Marie"  src="img/Marie.jpg" />
+                  <img class="picture-avatar avatar-click" alt="Mister IMAC"  src="img/Mister-IMAC.jpg" />
+                  <img class="picture-avatar avatar-click" alt="Nathanael"  src="img/Nathanael.jpg" />
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="button-start">
+            <input class="button" id="start" type="submit" value="let's go !" >
+          </div>
+        </section>
+
+        <section class="display-none" id="score-tab">
+          <table id="tableau">
+            <tbody>
+              <tr>
+                <th class="ranking-th">Position</th>
+                <th class="avatar-th">Avatar</th>
+                <th class="pseudo-th">Pseudo</th>
+                <th class="score-th">Score</th> 
+              </tr>
+              <tr>
+                <td colspan="4">le tableau des scores est actuellement indisponible</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="display-none" id="game">
+          <div id="quiz">
+            <h2 class="bold" id="question-number">question 1/25</h2>
+            <h3 id="question">Insérer question random</h3>
+            <ul class="bold" id="answers">
+              <li class="answer button" data-points="0" >Réponse 1</li>
+              <li class="answer button" data-points="0" >Réponse 2</li>
+              <li class="answer button" data-points="0" >Réponse 3</li>
+              <li class="answer button" data-points="0" >Réponse 4</li>
+            </ul>
+          </div>
+          <div id="profile">
+            <div id="infos">
+              <img class="picture-avatar" id="imgProfile" alt="image de profil" src="img/IMAC.jpg"/>
+              <p class="bold" id="pseudo">Default</p>
+            </div>
+            <div class="bold" id="score-structure">
+              <span class="display-none" id="questionPoints"></span>
+              <span id="score" >0</span> PTS
+            </div>
+          </div>
+        </section>
+      </div>
+      <div  class="bold display-none" id="modal">
+        <div class="oblong" id="modal-content">
+          <p id="modal-intro">
+            Bravo ! Tu as finis ce quizz !
+          </p>
+          <div id="modal-title">
+            -- pts
+          </div>
+          <p id="modal-body">
+            Merci d'avoir participé ! N'oublie pas de recharger la page si tu veux retenter ta chance.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
